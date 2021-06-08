@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Footer from './Footer'
 import { useTranslation, Trans } from 'react-i18next';
 
 const lngs = {
@@ -10,7 +11,7 @@ const lngs = {
 
 function App() {
   const { t, i18n } = useTranslation();
-  const [count, setCounter] = useState(1);
+  const [count, setCounter] = useState(0);
   return (
     <div className='App'>
       <header className='App-header'>
@@ -47,6 +48,7 @@ function App() {
           {t('description.part2')}
         </a>
       </header>
+      <Footer t={t} />
     </div>
   );
 }
