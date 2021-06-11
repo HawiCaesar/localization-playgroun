@@ -29,7 +29,10 @@ i18n
           counter: 'Changed language just once', 
           counter_plural: 'Changed language already {{count}} times',
           footer: {
-            date: 'Today is {{date, DATE_HUGE}}'
+            date: 'Today is {{date, DATE_HUGE}}',
+            date_morning: 'Good morning! Today is {{date, DATE_HUGE}} | Have a nice day',
+            date_afternoon: 'Good afternoon! It\'s {{date, DATE_HUGE}}',
+            date_evening: 'Good evening! Today was the {{date, DATE_HUGE}}'
           }
         },
       },
@@ -42,7 +45,10 @@ i18n
           counter: 'Lugha ilibadilishwa mara moja tu',
           counter_plural: 'Lugha imebadilika tayari mara {{count}}',
           footer: {
-            date: 'Leo ni {{date, DATE_HUGE}}'
+            date: 'Leo ni {{date, DATE_HUGE}}',
+            date_morning: 'Habari za asubuhi! Leo ni {{date, DATE_HUGE}} | Siku njema',
+            date_afternoon: 'Mchana mzuri! Ni {{date, DATE_HUGE}}',
+            date_evening: 'Habari za jioni! Leo ilikuwa {{date, DATE_HUGE}}'
           }
         },
       },
