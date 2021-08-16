@@ -26,13 +26,14 @@ function App() {
                 i18n.changeLanguage(lng)
                 setCounter(count + 1)
               }}
+              id={`change-lang-${lng}`}
             >
               {lngs[lng].nativeName}
             </button>
           ))}
         </div>
-        <p>
-        <i>{t('counter', { count })}</i>
+        <p className="counter-for-language-changed">
+          <i>{t('counter', { count })}</i>
         </p>
         <p>
           <Trans i18nKey='description.part1'>
